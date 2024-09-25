@@ -1,0 +1,96 @@
+/* Footer Container */
+.footer-container {
+    background-color: #1e2a38;
+    color: #fff;
+    padding: 20px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Section */
+.footer-section {
+    flex: 1;
+    margin: 15px;
+}
+
+/* Company Info Section */
+.company-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.company-info p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Quick Links Section */
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+}
+
+.links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links ul li a:hover {
+    color: #007bff;
+}
+
+/* Social Media Section */
+.social-icons {
+    list-style-type: none;
+    display: flex;
+    gap: 45px;
+    padding: 45px;
+}
+
+.social-icons li {
+    margin-right: 30px;
+}
+
+.social-icons li a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: #007bff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

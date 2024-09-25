@@ -1,0 +1,65 @@
+/* ViewRecord.css */
+
+.view-record {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for the record details */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .view-record h1 {
+    font-size: 28px;
+    color: #2a6f97; /* Healthcare-inspired Teal Blue */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .view-record p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a4a4a; /* Slate Gray */
+  }
+  
+  .view-record strong {
+    color: #333; /* Darker Gray for emphasis */
+  }
+  
+  .view-record__description,
+  .view-record__additional-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .view-record__description h3,
+  .view-record__additional-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2a6f97; /* Teal Blue for headings */
+  }
+  
+  .view-record__description p,
+  .view-record__additional-info p {
+    color: #555; /* Darker Gray for details */
+  }
+  
+  .view-record__description {
+    border-left: 4px solid #2a6f97; /* Teal Blue border for the description section */
+  }
+  
+  .view-record__additional-info {
+    border-left: 4px solid #f39c12; /* Yellow-orange border for additional info */
+  }
+  
+  .loading,
+  .record-not-found {
+    text-align: center;
+    font-size: 20px;
+    color: #999; /* Gray for loading or not found messages */
+  }
+  

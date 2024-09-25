@@ -1,0 +1,29 @@
+.settings-container {
+    padding: 20px;
+}
+
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.settings-form label {
+    margin-bottom: 5px;
+}
+
+.settings-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.save-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

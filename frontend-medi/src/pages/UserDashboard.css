@@ -1,0 +1,26 @@
+/* UserDashboard.css */
+
+/* User Dashboard Styles */
+.user-dashboard {
+    padding: 5px;
+    margin-left: 70px; /* Adjust for sidebar width */
+    margin-top: 10px; /* Adjust for fixed header */
+}
+
+.user-dashboard h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.user-dashboard .dashboard-section {
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-dashboard .dashboard-section h3 {
+    margin-top: 0;
+    color: #007bff;
+}

@@ -1,0 +1,98 @@
+/* About.css */
+
+/* General Styling for About Page */
+.about {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #4A4A4A; /* Slate Gray */
+    font-family: 'Arial', sans-serif;
+    transition: margin-left 0.3s ease; /* Smooth transition for sidebar effect */
+}
+
+/* Header Section */
+.about h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #4A90E2; /* Soft Blue */
+    margin-bottom: 40px;
+}
+
+/* About Sections */
+.about__section {
+    background-color: #FFFFFF; /* White */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about__section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Headings */
+.about__section h2 {
+    color: #4A90E2; /* Soft Blue */
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+/* Paragraphs */
+.about__section p {
+    color: #4A4A4A; /* Slate Gray */
+    line-height: 1.6;
+}
+
+/* Features List */
+.about__features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about__features-list li {
+    background-color: #F5F5F5; /* Light Gray */
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.about__features-list li:hover {
+    background-color: #A2D5C6; /* Mint Green on hover */
+}
+
+/* Links */
+.about__section a {
+    color: #4DB6AC; /* Teal */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about__section a:hover {
+    color: #F7D794; /* Soft Yellow on hover */
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        padding: 20px;
+    }
+
+    .about__section {
+        padding: 15px;
+    }
+
+    .about h1 {
+        font-size: 2em;
+    }
+
+    .about__section h2 {
+        font-size: 1.5em;
+    }
+}

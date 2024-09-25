@@ -1,0 +1,84 @@
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1e2a38; /* Darker blue-gray */
+    color: #ecf0f1; /* Light grey text */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    z-index: 1000;
+    transform: translateX(-100%); /* Start off-screen */
+    transition: transform 0.3s ease; /* Smooth slide effect */
+}
+
+/* Sidebar visible state */
+.sidebar.active {
+    transform: translateX(0); /* Slide in */
+}
+
+/* Sidebar toggle button */
+.sidebar-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #34495e; /* Slightly lighter blue-gray */
+    color: #ecf0f1; /* Light grey */
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    z-index: 1100;
+    font-size: 16px;
+}
+
+/* Sidebar Links */
+.sidebar-section {
+    margin-top: 50px;
+}
+
+.sidebar-section a {
+    color: #ffffff; /* Light gray links */
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-section a:hover {
+    background-color: #1660a0; 
+    color: #ecf0f1; /* Keep text light on hover */
+}
+
+/* Content */
+.content {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+    padding: 10px;
+}
+
+/* Only shift content on larger screens */
+@media (min-width: 768px) {
+    .content.shifted {
+        margin-left: 250px; /* Shift content to the right to accommodate sidebar */
+    }
+}
+
+/* Section headings */
+.sidebar h3 {
+    color: #ecf0f1;
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #7f8c8d; /* Light gray border */
+    margin-bottom: 5px;
+}
+
+/* Icon and link alignment */
+.sidebar-section a i {
+    margin-right: 10px;
+    font-size: 18px;
+}

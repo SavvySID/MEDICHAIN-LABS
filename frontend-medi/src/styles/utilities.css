@@ -1,0 +1,175 @@
+/* utilities.css */
+
+/* Spacing Utilities */
+.margin-top-small {
+    margin-top: 10px;
+  }
+  
+  .margin-top-medium {
+    margin-top: 20px;
+  }
+  
+  .margin-top-large {
+    margin-top: 40px;
+  }
+  
+  .margin-bottom-small {
+    margin-bottom: 10px;
+  }
+  
+  .margin-bottom-medium {
+    margin-bottom: 20px;
+  }
+  
+  .margin-bottom-large {
+    margin-bottom: 40px;
+  }
+  
+  .padding-small {
+    padding: 10px;
+  }
+  
+  .padding-medium {
+    padding: 20px;
+  }
+  
+  .padding-large {
+    padding: 40px;
+  }
+  
+  /* Text Alignment */
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  /* Text Styles */
+  .text-bold {
+    font-weight: bold;
+  }
+  
+  .text-italic {
+    font-style: italic;
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  .text-muted {
+    color: #666;
+  }
+  
+  /* Display Utilities */
+  .d-inline {
+    display: inline;
+  }
+  
+  .d-inline-block {
+    display: inline-block;
+  }
+  
+  .d-block {
+    display: block;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .d-grid {
+    display: grid;
+  }
+  
+  /* Flexbox Utilities */
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  .align-start {
+    align-items: flex-start;
+  }
+  
+  .align-end {
+    align-items: flex-end;
+  }
+  
+  /* Visibility */
+  .visible {
+    visibility: visible;
+  }
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /* Overflow */
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  .overflow-auto {
+    overflow: auto;
+  }
+  
+  /* Width and Height */
+  .full-width {
+    width: 100%;
+  }
+  
+  .full-height {
+    height: 100%;
+  }
+  
+  /* Border Radius */
+  .rounded {
+    border-radius: 5px;
+  }
+  
+  .rounded-full {
+    border-radius: 50%;
+  }
+  
+  /* Cursor */
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  .cursor-default {
+    cursor: default;
+  }
+  
+  /* Z-Index */
+  .z-top {
+    z-index: 999;
+  }
+  
+  .z-bottom {
+    z-index: -1;
+  }
+  

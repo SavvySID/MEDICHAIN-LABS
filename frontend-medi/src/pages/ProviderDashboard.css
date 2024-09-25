@@ -1,0 +1,26 @@
+/* ProviderDashboard.css */
+
+/* Provider Dashboard Styles */
+.provider-dashboard {
+    padding: 20px;
+    margin-left: 270px; /* Adjust for sidebar width */
+    margin-top: 70px; /* Adjust for fixed header */
+}
+
+.provider-dashboard h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.provider-dashboard .dashboard-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.provider-dashboard .dashboard-section h3 {
+    margin-top: 0;
+    color: #007bff;
+}

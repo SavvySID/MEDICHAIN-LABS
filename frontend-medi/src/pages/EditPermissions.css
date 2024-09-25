@@ -1,0 +1,43 @@
+/* EditPermissions.css */
+
+/* Edit Permissions Page Styles */
+.edit-permissions {
+    padding: 20px;
+    margin-left: 270px; /* Adjust for sidebar width */
+    margin-top: 70px; /* Adjust for fixed header */
+}
+
+.edit-permissions h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.edit-permissions .permissions-form {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.edit-permissions .form-group {
+    margin-bottom: 15px;
+}
+
+.edit-permissions .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.edit-permissions .form-group input,
+.edit-permissions .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.edit-permissions .form-group input:focus,
+.edit-permissions .form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}

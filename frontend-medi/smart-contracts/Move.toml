@@ -1,0 +1,21 @@
+[package]
+# Name of your Move package
+name = "MedichainLabs"
+# Version of your Move package
+version = "0.0.1"
+
+# Authors of this Move package
+authors = ["Your Name <your.email@example.com>"]
+
+# License for your Move package (optional)
+license = "Apache-2.0"
+
+# Specifies the address where the modules will be deployed
+[addresses]
+# Define module addresses with an alias to refer to in Move modules
+MedichainLabs = "0xYourModuleAddress"  # Replace with the actual address
+
+[dependencies]
+# If you have dependencies on standard libraries or other packages, specify them here
+
+aptos-framework = { git = "https://github.com/aptos-labs/aptos-core.git", rev = "main" }
