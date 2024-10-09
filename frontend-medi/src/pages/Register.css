@@ -1,70 +1,150 @@
-/* Register.css */
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f7f6;
-}
+/* src/pages/Register.css */
 
 .register-container {
-    width: 100%;
     max-width: 400px;
-    margin: 100px auto;
-    background-color: #fff;
+    margin: 0 auto;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.register-form h2 {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-container h2 {
     text-align: center;
-    margin-bottom: 20px;
     color: #333;
-}
-
-.form-group {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .register-container .register-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
     margin-bottom: 15px;
-}
-
-.form-group label {
+  }
+  
+  .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #555;
     font-weight: bold;
-}
-
-.form-group input {
+    color: #333;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"],
+  .form-group select,
+  .form-group input[type="file"] {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 14px;
     box-sizing: border-box;
-}
-
-.form-group input:focus {
-    border-color: #3498db;
-    outline: none;
-}
-
-.register-btn {
+  }
+  
+  .form-group input[type="file"] {
+    padding: 5px;
+  }
+  
+  .register-button {
     width: 100%;
     padding: 10px;
-    background-color: #3498db;
-    color: #fff;
-    font-size: 18px;
+    background-color: #007bff;
+    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
+  }
+  
+  .register-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .register-footer {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .register-footer p {
+    color: #666;
+  }
+  
+  .register-footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .register-footer a:hover {
+    text-decoration: underline;
+  }
+  /* Add this to your Register.css */
 
-.register-btn:hover {
-    background-color: #2980b9;
-}
+  /* Add this to your Register.css */
 
-/* Responsive design */
-@media (max-width: 480px) {
-    .register-container {
-        width: 90%;
-    }
-}
+.error-message {
+    color: #d9534f; /* Bootstrap danger color */
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+.registration-success {
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text */
+    border: 1px solid #c3e6cb; /* Light green border */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    text-align: center;
+  }
+/* Add this to your Register.css */
+
+.password-wrapper {
+    position: relative; /* Make the wrapper position relative */
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-wrapper input {
+    padding-right: 40px; /* Add padding to make space for the icon */
+  }
+  
+  .icon-button {
+    position: absolute; /* Position icon absolutely within the wrapper */
+    right: 10px; /* Position the icon towards the right */
+    top: 50%; /* Center the icon vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555; /* Default icon color */
+  }
+  
+  .icon-button:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  
+  input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  .register-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .register-button:disabled {
+    background-color: #cccccc; /* Light gray color for disabled button */
+    cursor: not-allowed;
+  }
+  

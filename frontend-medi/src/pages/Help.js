@@ -8,7 +8,7 @@ const Help = () => {
             <div className="faq-section">
                 <h3>Frequently Asked Questions</h3>
                 <p><strong>Q:</strong> How do I add a new health record?</p>
-                <p><strong>A:</strong> Navigate to the "Health Records" section and click the "Add New Record" button.</p>
+                <p><strong>A:</strong> Navigate to the "Health Records" section and click the "Add Record" button.</p>
                 <p><strong>Q:</strong> How can I change my password?</p>
                 <p><strong>A:</strong> Go to the "Settings" page and update your password under "Account Details."</p>
             </div>

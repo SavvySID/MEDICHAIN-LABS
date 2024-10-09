@@ -18,8 +18,8 @@ const Dashboard = () => {
             <div className="recent-activity">
                 <h2>Recent Activities</h2>
                 <ul>
-                    <li>Added new health record: Blood Test - September 20, 2024</li>
-                    <li>Permissions updated for Dr. Smith - September 18, 2024</li>
+                    <li>Added new health record- September 20, 2024</li>
+                    <li>Permissions updated - September 18, 2024</li>
                 </ul>
             </div>
         </div>

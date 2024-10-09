@@ -2,9 +2,9 @@
 
 /* Provider Dashboard Styles */
 .provider-dashboard {
-    padding: 20px;
-    margin-left: 270px; /* Adjust for sidebar width */
-    margin-top: 70px; /* Adjust for fixed header */
+    padding: 0px;
+    margin-left: 12px; /* Adjust for sidebar width */
+    margin-top: 0px; /* Adjust for fixed header */
 }
 
 .provider-dashboard h2 {

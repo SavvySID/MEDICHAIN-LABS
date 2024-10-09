@@ -3,8 +3,8 @@
 /* Edit Permissions Page Styles */
 .edit-permissions {
     padding: 20px;
-    margin-left: 270px; /* Adjust for sidebar width */
-    margin-top: 70px; /* Adjust for fixed header */
+    margin-left: 20px; /* Adjust for sidebar width */
+    margin-top: 20px; /* Adjust for fixed header */
 }
 
 .edit-permissions h2 {

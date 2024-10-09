@@ -1,0 +1,109 @@
+/* WalletConnect.css */
+
+/* Main container for the wallet connect section */
+.wallet-connect-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Section title */
+.wallet-connect-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Dropdown for selecting the wallet */
+.wallet-select-dropdown {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  outline: none;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.wallet-select-dropdown:focus {
+  border-color: #333;
+}
+
+/* Connect Wallet button */
+.connect-wallet-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.connect-wallet-btn:hover {
+  background-color: #45a049;
+}
+
+/* Wallet info display */
+.wallet-info {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.wallet-info p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Styling for the connected wallet address and balance */
+.wallet-data {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Button to toggle address visibility */
+.toggle-address-btn {
+  margin-left: 10px;
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-address-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Disconnect Wallet button */
+.disconnect-wallet-btn {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.disconnect-wallet-btn:hover {
+  background-color: #e53935;
+}

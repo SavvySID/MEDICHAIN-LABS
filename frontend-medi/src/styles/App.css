@@ -1,229 +1,218 @@
-/* App.css */
-
-/* General Page Styling */
+/* General layout and structure */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fc;
   margin: 0;
   padding: 0;
-  background-color: #F0F4F8; /* Light Blue-Gray */
-  color: #2C3E50; /* Dark Blue-Gray */
-  overflow-x: hidden;
 }
 
-/* Main Container */
-.container {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  transition: margin-left 0.3s ease;
-}
-
-/* Header Styling */
-header {
-  background-color: #3498DB; /* Medical Blue */
-  color: #FFFFFF;
-  padding: 15px 20px;
+.app {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Logo */
-header .logo {
-  font-size: 1.8em;
-  font-weight: bold;
-}
-
-header .logo a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-/* Navigation Styles */
-nav {
-  display: flex;
-  gap: 20px;
-}
-
-nav a {
-  color: #FFFFFF;
-  padding: 10px 15px;
-  font-size: 1.1em;
-  text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 5px;
-}
-
-nav a:hover {
-  background-color: #2980B9; /* Darker Blue */
-  color: #FFFFFF;
-}
-
-/* Mobile Navigation Toggle Button */
-.nav-toggle {
-  display: none;
   flex-direction: column;
-  cursor: pointer;
+  min-height: 100vh;
 }
 
-.nav-toggle .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #FFFFFF;
-  margin: 4px 0;
-  transition: 0.4s;
+.app-body {
+  display: flex;
+  flex: 1;
 }
 
-/* Main Content */
 .main-content {
-  margin-top: 80px;
-  padding: 30px;
-  background-color: #FFFFFF;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: margin-left 0.3s ease;
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  overflow-y: auto;
+  transition: margin-left 0.3s ease-in-out;
 }
 
-/* Buttons */
-.button {
-  background-color: #2ECC71; /* Green */
-  color: #FFFFFF;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 1em;
+/* Sidebar active state */
+.sidebar.active ~ .main-content {
+  margin-left: 0px;
+}
+
+/* Header styles */
+header {
+  background-color: #1ABC9C;
+  color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.header__logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.header__logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-item {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ffffffcf;
   font-weight: 500;
 }
 
-.button:hover {
-  background-color: #27AE60; /* Darker Green */
+.header__nav-item:hover {
+  color: #f4f7fc;
 }
 
-/* Links */
-a {
-  color: #3498DB; /* Medical Blue */
+.header__cta {
+  background-color: #fff;
+  color: #007bff;
+  padding: 8px 16px;
+  border-radius: 5px;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-weight: bold;
 }
 
-a:hover {
-  color: #2980B9; /* Darker Blue */
+.header__cta:hover {
+  background-color: #007bff;
+  color: #fff;
 }
 
-/* Utility Classes */
-.text-center {
+/* Footer styles */
+footer {
+  background-color: #2C3E50;
+  color: #ECF0F1;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-bottom li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.footer-bottom li a {
+  color: #ECF0F1;
+  text-decoration: none;
+}
+
+.footer-bottom li a:hover {
+  color: #1ABC9C;
+}
+
+/* Wallet Connect Styles */
+.wallet-connect-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Style */
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333; 
   text-align: center;
 }
 
-.margin-bottom-medium {
-  margin-bottom: 30px;
-}
-
-.padding-medium {
-  padding: 30px;
-}
-
-/* Forms */
-input, select, textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #BDC3C7; /* Light Gray */
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 1em;
-}
-
-input:focus, select:focus, textarea:focus {
-  border-color: #3498DB; /* Medical Blue */
-  outline: none;
-  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
-}
-
-/* Healthcare-specific Styles */
-.health-icon {
-  color: #3498DB; /* Medical Blue */
-  font-size: 2em;
-  margin-bottom: 15px;
-}
-
-.health-card {
-  background-color: #FFFFFF;
-  border-radius: 8px;
-  padding: 20px;
+/* Wallet Selection Section */
+.wallet-selection {
   margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
 }
 
-.health-card:hover {
-  transform: translateY(-5px);
+/* Dropdown Styles */
+.wallet-select-dropdown {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box; 
 }
 
-.health-stat {
-  font-size: 2.5em;
+/* Button Styles */
+.connect-wallet-btn,
+.disconnect-wallet-btn,
+.toggle-address-btn {
+  padding: 10px 15px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effects */
+.connect-wallet-btn:hover,
+.disconnect-wallet-btn:hover,
+.toggle-address-btn:hover {
+  background-color: #45a049;
+}
+
+/* Wallet Info Section */
+.wallet-info {
+  margin-top: 20px;
+}
+
+/* Data Display Styles */
+.wallet-data {
   font-weight: bold;
-  color: #2ECC71; /* Green */
-  margin-bottom: 10px;
+  color: #555;
 }
 
-/* Responsive Design */
+
+/* Toggle Button Style */
+.toggle-address-btn {
+  margin-left: 10px;
+  background-color: #007bff;
+}
+
+.toggle-address-btn:hover {
+  background-color: #0056b3; 
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
-  .container {
-    padding: 15px;
-  }
-
-  .main-content {
-    margin-top: 70px;
-    padding: 20px;
-  }
-
-  nav {
+  .header__nav {
     display: none;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #3498DB; /* Medical Blue */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
-  nav.show {
-    display: flex;
+  .sidebar {
+    width: 200px;
   }
 
-  nav a {
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #2980B9; /* Darker Blue */
+  .sidebar-toggle.expanded {
+    left: 215px;
   }
 
-  nav a:last-child {
-    border-bottom: none;
+  .content.shifted {
+    margin-left: 200px;
   }
 
-  .nav-toggle {
-    display: flex;
-  }
-
-  /* Rotate bars for the close icon */
-  .rotate-bar1 {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .hide-bar {
-    opacity: 0;
-  }
-
-  .rotate-bar2 {
-    transform: rotate(-45deg) translate(5px, -5px);
+  .header__cta {
+    font-size: 14px;
+    padding: 6px 12px;
   }
 }

@@ -8,7 +8,8 @@ const Footer = () => {
                 {/* Company Info */}
                 <div className="footer-section company-info">
                     <h3>Medichain Labs</h3>
-                    <p>Your company description or tagline goes here. You can add additional company information as well.</p>
+                    <p>Your Health, Your Control.</p>
+                    <p>Empowering individuals with secure, decentralized access to personal health records.</p>
                 </div>
 
                 {/* Quick Links */}

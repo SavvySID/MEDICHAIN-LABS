@@ -22,6 +22,8 @@ const Header = () => {
                 <Link to="/contact" className="header__nav-item">Contact</Link>
             </nav>
             <Link to="/Connect-Wallet" className="header__cta">Connect Wallet</Link>
+            <Link to="/Login" className="header__cta">Login</Link>
+            <Link to="/Register" className="header__cta">Register</Link>
         </header>
     );
 };

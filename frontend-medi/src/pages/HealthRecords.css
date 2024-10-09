@@ -1,26 +1,144 @@
-.health-records-container {
-    padding: 20px;
-}
+/* HealthRecords.css */
 
-.add-record-button {
-    background-color: #007bff;
+/* Main container background */
+.health-record-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #e9f7f9; /* Light healthcare-themed background */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Form and Records section styling */
+  .patient-form-card, .opd-records-card {
+    width: 48%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #00796b; /* Dark teal for headings */
+  }
+  
+  /* Form inputs and labels */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #004d40; /* Deep teal for label text */
+  }
+  
+  .form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b2dfdb; /* Light teal border for inputs */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #e0f2f1; /* Light background for inputs */
+    color: #004d40; /* Text color for inputs */
+  }
+  
+  /* Submit button */
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Healthcare-themed teal button */
     color: white;
-    padding: 10px 20px;
+    font-size: 18px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #004d40; /* Darker teal on hover */
+  }
+  
+  /* Table Styling for OPD Records */
+  .opd-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .opd-table th, .opd-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #b2dfdb; /* Light teal border for rows */
+    color: #004d40; /* Deep teal for text */
+  }
+  
+  .opd-table th {
+    background-color: #73adeb; /* Dark teal for table headers */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .opd-table td {
+    background-color: #ffffff;
+  }
+  
+  .opd-table tr:hover {
+    background-color: #e0f2f1; /* Light teal hover effect on rows */
+  }
+  
+  .opd-table tbody tr td:last-child {
+    font-weight: bold;
+    color: #004d40; /* Bold deep teal for last column */
+  }
+  
+  /* Scrollable Records Section */
+  .opd-records-card {
+    max-height: 700px;
+    overflow-y: auto;
+  }
+  
+  .opd-table tbody tr td[colspan='9'] {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+  }
+  
+  /* File Upload Section */
+.file-upload-section {
+  margin-top: 70px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
 }
 
-.records-list {
-    list-style: none;
-    padding: 0;
+.file-upload-section h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.record-item {
-    background-color: #f8f9fa;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.file-upload-section input[type="file"] {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.file-upload-section input[type="file"]:hover {
+  border-color: #888;
+}
+
+.file-upload-section p {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
 }

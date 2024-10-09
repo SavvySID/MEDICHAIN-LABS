@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Form } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Layout from './components/Layout';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
@@ -19,6 +20,8 @@ import EditPermissions from './pages/EditPermissions';
 import Register from './pages/Register';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
+import Login from './pages/Login';
+import WalletConnect from './components/WalletConnect';
 
 // CSS files
 import './styles/main.css';
@@ -26,9 +29,11 @@ import './styles/App.css';
 import './styles/components.css';
 import './styles/index.css';
 import './styles/utilities.css';
+import './components/WalletConnect.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import TermsAndConditions from './pages/TermsAndConditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import ForgotPassword from './pages/ForgotPass';
 
 
 const App = () => {
@@ -44,11 +49,14 @@ const App = () => {
                 <Routes>
                   {/* Main Pages */}
                   <Route path="/" element={<HomePage />} />
-                  <Route path="/register" element={<Register />} />
+                  <Route path="/Register" element={<Register />} />
+                  <Route path="/Forgot-Password" element={<ForgotPassword />} />
                   <Route path="/services" element={<Services />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/terms" element={<TermsAndConditions />} />
                   <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                  <Route path="/Login" element={<Login />} />
+                  <Route path="/Connect-Wallet" element={<WalletConnect />} />
 
                   {/* Sidebar Pages */}
                   <Route path="/dashboard" element={<Dashboard />} />
