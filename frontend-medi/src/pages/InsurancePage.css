@@ -1,0 +1,122 @@
+/* Main container background */
+.container {
+    max-width: 800px; /* Set a max width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    background-color: #e9f7f9; /* Light healthcare-themed background */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input field styling */
+  form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #b2dfdb; /* Light teal border for inputs */
+    border-radius: 5px;
+    background-color: #e0f2f1; /* Light teal background */
+    color: #004d40; /* Dark teal text */
+  }
+  
+  form input::placeholder {
+    color: #00796b; /* Placeholder text color */
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    background-color: #007bff; /* Healthcare-themed blue button */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #004d40; /* Darker teal hover effect */
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #d9534f; /* Red for error message */
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #b2dfdb; /* Light teal border for rows */
+    color: #004d40; /* Dark teal text */
+  }
+  
+  table th {
+    background-color: #73adeb; /* Dark teal for table headers */
+    color: white;
+    font-weight: bold;
+  }
+  
+  table tbody tr:hover {
+    background-color: #e0f2f1; /* Light teal hover effect */
+  }
+  
+  /* No records message */
+  table tbody tr td[colspan="4"] {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+  }
+  
+  /* Delete button styling */
+  button {
+    padding: 5px 10px;
+    background-color: #d9534f; /* Red for delete button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #c9302c; /* Darker red on hover */
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    form {
+      padding: 15px;
+    }
+  
+    table th, table td {
+      padding: 10px;
+    }
+  }
+  

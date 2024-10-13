@@ -9,6 +9,7 @@ import About from './pages/About';
 import { AuthProvider } from './context/AuthContext';
 import { BlockchainProvider } from './context/BlockchainContext';
 import HealthRecords from './pages/HealthRecords';
+import InsurancePage from './pages/InsurancePage';
 import ViewRecord from './pages/ViewRecord';
 import Dashboard from './components/Dashboard';
 import Permissions from './components/Permissions';
@@ -61,6 +62,7 @@ const App = () => {
                   {/* Sidebar Pages */}
                   <Route path="/dashboard" element={<Dashboard />} />
                   <Route path="/health-records" element={<HealthRecords />} />
+                  <Route path="/Insurance" element={<InsurancePage />} />
                   <Route path="/permissions" element={<Permissions />} />
                   <Route path="/edit-permissions" element={<EditPermissions />} />
                   <Route path="/settings" element={<Settings />} />
