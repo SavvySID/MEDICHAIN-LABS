@@ -53,7 +53,7 @@ const App = () => {
                   <Route path="/Register" element={<Register />} />
                   <Route path="/Forgot-Password" element={<ForgotPassword />} />
                   <Route path="/services" element={<Services />} />
-                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/health-records" element={<HealthRecords />} />
                   <Route path="/terms" element={<TermsAndConditions />} />
                   <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                   <Route path="/Login" element={<Login />} />
@@ -61,7 +61,7 @@ const App = () => {
 
                   {/* Sidebar Pages */}
                   <Route path="/dashboard" element={<Dashboard />} />
-                  <Route path="/health-records" element={<HealthRecords />} />
+                  <Route path="/contact" element={<Contact />} />
                   <Route path="/Insurance" element={<InsurancePage />} />
                   <Route path="/permissions" element={<Permissions />} />
                   <Route path="/edit-permissions" element={<EditPermissions />} />

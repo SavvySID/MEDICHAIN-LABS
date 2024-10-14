@@ -26,7 +26,7 @@ const Sidebar = () => {
                     <a href="/Dashboard"><i className="fas fa-tachometer-alt"></i> Dashboard</a>
                     <a href="/Provider-Dashboard"><i className="fas fa-user-md"></i> Provider Dashboard</a>
                     <a href="/User-Dashboard"><i className="fas fa-user"></i> User Dashboard</a>
-                    <a href="/Health-Records"><i className="fas fa-file-medical-alt"></i> Health Records</a>
+                    <a href="/Contact"><i className="fas fa-envelope"></i> Contact</a>
                     <a href="/Insurance"><i className="fas fa-user-shield"></i> Insurance</a>
                     <a href="/View-Record"><i className="fas fa-eye"></i> View Record</a>
                     <a href="/Permissions"><i className="fas fa-user-shield"></i> Permissions</a>
