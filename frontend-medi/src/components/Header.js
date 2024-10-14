@@ -2,7 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
-import logo from 'D:/Koding/medichain-labs/frontend-medi/src/assests/logo.png';
+// import logo from '../assets/logo.png'; // Change 'assests' to 'assets'
+
 
 
 
@@ -11,7 +12,6 @@ const Header = () => {
         <header className="header">
             <Link to="/" className="header__logo">
                 <div className="header-logo">
-        <img src={logo} alt="Logo" className="logo" />
       </div>
             <span className="header__logo-text">MEDICHAIN LABS</span>
             </Link>
